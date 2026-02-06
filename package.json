@@ -1,0 +1,60 @@
+{
+  "name": "@dreamshot/mcp-server",
+  "version": "1.0.0",
+  "description": "MCP server for Dreamshot AI image and video generation",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "bin": {
+    "dreamshot-mcp": "dist/index.js"
+  },
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx watch src/index.ts",
+    "start": "node dist/index.js",
+    "prepublishOnly": "npm run build",
+    "typecheck": "tsc --noEmit",
+    "format": "prettier --write .",
+    "lint": "eslint src --ext .ts"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "dreamshot",
+    "ai",
+    "image-generation",
+    "video-generation",
+    "claude",
+    "anthropic"
+  ],
+  "author": "Dreamshot <hello@dreamshot.ai>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dreamshot-io/mcp-server.git"
+  },
+  "bugs": {
+    "url": "https://github.com/dreamshot-io/mcp-server/issues"
+  },
+  "homepage": "https://github.com/dreamshot-io/mcp-server#readme",
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.0",
+    "prettier": "^3.1.0",
+    "tsx": "^4.6.0",
+    "typescript": "^5.3.0"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "publishConfig": {
+    "access": "public"
+  }
+}
