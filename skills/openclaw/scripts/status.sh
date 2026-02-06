@@ -11,6 +11,6 @@ fi
 
 GENERATION_ID="${1:?Generation ID is required}"
 
-curl -s -X GET "https://dreamshot.ai/api/v1/generations/$GENERATION_ID" \
+curl -s -X GET "https://app.dreamshot.io/api/v1/generations/$GENERATION_ID" \
   -H "Authorization: Bearer $DREAMSHOT_API_KEY" \
   -H "Content-Type: application/json" | jq .

@@ -9,6 +9,6 @@ if [ -z "$DREAMSHOT_API_KEY" ]; then
   exit 1
 fi
 
-curl -s -X GET "https://dreamshot.ai/api/v1/credits" \
+curl -s -X GET "https://app.dreamshot.io/api/v1/credits" \
   -H "Authorization: Bearer $DREAMSHOT_API_KEY" \
   -H "Content-Type: application/json" | jq .

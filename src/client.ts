@@ -94,7 +94,7 @@ export class DreamshotClient {
 
   constructor(config: DreamshotConfig) {
     this.apiKey = config.apiKey
-    this.baseUrl = config.baseUrl || 'https://dreamshot.ai/api/v1'
+    this.baseUrl = config.baseUrl || 'https://app.dreamshot.io/api/v1'
   }
 
   private async request<T>(

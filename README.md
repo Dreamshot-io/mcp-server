@@ -9,7 +9,7 @@ MCP server for [Dreamshot](https://dreamshot.ai) AI image and video generation. 
 
 ### 1. Get your API key
 
-Sign up at [dreamshot.ai](https://dreamshot.ai) and get your API key from [Settings > API](https://dreamshot.ai/settings/api).
+Sign up at [dreamshot.io](https://dreamshot.io) and get your API key from [Settings > API](https://dreamshot.io/settings/api).
 
 ### 2. Add to your MCP config
 
@@ -140,7 +140,7 @@ Run `dreamshot_list_tools` to see all available tools and current pricing.
 | Variable | Required | Description |
 |----------|----------|-------------|
 | `DREAMSHOT_API_KEY` | Yes | Your Dreamshot API key (`dst_xxx`) |
-| `DREAMSHOT_BASE_URL` | No | Custom API URL (defaults to `https://dreamshot.ai/api/v1`) |
+| `DREAMSHOT_BASE_URL` | No | Custom API URL (defaults to `https://app.dreamshot.io/api/v1`) |
 
 ## Development
 
@@ -160,9 +160,9 @@ npm start
 
 ## Links
 
-- [Dreamshot](https://dreamshot.ai) - AI photo generation platform
-- [API Documentation](https://dreamshot.ai/docs/api)
-- [Get API Key](https://dreamshot.ai/settings/api)
+- [Dreamshot](https://dreamshot.io) - AI photo generation platform
+- [API Documentation](https://dreamshot.io/docs/api)
+- [Get API Key](https://dreamshot.io/settings/api)
 - [MCP Specification](https://modelcontextprotocol.io)
 
 ## License

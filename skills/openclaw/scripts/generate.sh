@@ -36,7 +36,7 @@ JSON=$(jq -n \
   | if $imageUrl != "" then . + {imageUrls: [$imageUrl]} else . end
   ')
 
-curl -s -X POST "https://dreamshot.ai/api/v1/generations" \
+curl -s -X POST "https://app.dreamshot.io/api/v1/generations" \
   -H "Authorization: Bearer $DREAMSHOT_API_KEY" \
   -H "Content-Type: application/json" \
   -d "$JSON" | jq .
